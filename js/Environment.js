@@ -17,6 +17,6 @@ Environment.prototype.update = function(){
 Environment.prototype.render = function(){
   for(let i =0; i <= this.c.width/this.bgWidth+1; i++)
     this.ctx.drawImage(this.bgImg, this.bgPos+i*this.bgWidth, 0);
-     this.ctx.drawImage(this.earthpic,this.bgWidth/2,this.bgheight/2);
+     this.ctx.drawImage(this.earthpic,(this.bgWidth/2)-128,(this.bgheight/2)-128);
 
 };
